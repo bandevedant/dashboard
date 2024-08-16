@@ -11,9 +11,9 @@ const BillingPage = () => {
   });
 
   return (
-    <div className="bg-gray-100  lg-w-full">
+    <div className="bg-gray-100  lg-w-full ">
       <div className="w-full bg-white shadow-lg rounded-lg p-8">
-        <h2 className="text-2xl font-semibold mb-4">Billing</h2>
+        <h2 className="text-2xl font-semibold mb-4 mt-3">Billing</h2>
 
         <div className="mb-6">
           <h3 className="text-lg font-medium">Billing Type</h3>

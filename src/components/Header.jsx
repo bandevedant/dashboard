@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Header = ({ toggleSidebar }) => {
   return (
-    <header className="flex items-center justify-between p-4 bg-white shadow-md">
+    <header className=" z-50 flex items-center justify-between p-4 bg-white shadow-md">
       {/* Logo and Subtitle */}
       <div className="flex items-center space-x-2">
         <div className="relative w-36 h-11">

@@ -9,7 +9,6 @@ import { RiBarChartBoxFill} from "react-icons/ri";
 import { BsCalendarEventFill } from "react-icons/bs";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { IoBagHandleSharp } from "react-icons/io5";
-import { FaCreditCard } from "react-icons/fa6";
 
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
@@ -19,7 +18,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     { name: 'Insights', icon: <RiBarChartBoxFill />, link: '/insights' },
     { name: 'Activity', icon: <BsCalendarEventFill />, link: '/activity' },
     { name: 'People', icon: <FaPeopleGroup />, link: '/people' },
-    { name: 'Billing', icon: <FaCreditCard />, link: '/billing' },
+    { name: 'Billing', icon: <FiCreditCard />, link: '/billing' },
     { name: 'Marketplace', icon: <IoBagHandleSharp />, link: '/marketplace' },
     { name: 'Log out', icon: <FiLogOut />, link: '/logout' },
   ];
