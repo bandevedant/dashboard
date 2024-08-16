@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header toggleSidebar={toggleSidebar}/>
+      <Header toggleSidebar={toggleSidebar} isSideBarOpen={sidebarOpen}/>
       <div className="flex flex-1">
         <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
         <div className="flex-1 bg-gray-100">

@@ -2,10 +2,10 @@
 import { FaCircle } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { IoIosHelpCircle } from "react-icons/io";
-
+import { FaTimes } from "react-icons/fa";
 import Image from "next/image";
 
-const Header = ({ toggleSidebar }) => {
+const Header = ({ toggleSidebar, isSideBarOpen }) => {
   return (
     <header className=" z-50 flex items-center justify-between p-4 bg-white shadow-md">
       {/* Logo and Subtitle */}
@@ -39,9 +39,19 @@ const Header = ({ toggleSidebar }) => {
         </div>
 
         {/* Hamburger Menu Icon for mobile */}
-        <button className="md:hidden" onClick={toggleSidebar}>
-          <FiMenu className="text-gray-600" size={24} />
-        </button>
+        {!isSideBarOpen ? (
+          <>
+            <button className="md:hidden" onClick={toggleSidebar}>
+              <FiMenu className="text-gray-600" size={24} />
+            </button>
+          </>
+        ) : (
+          <div className="flex justify-end md:hidden p-4">
+            <button onClick={toggleSidebar} className="text-gray-600 text-2xl">
+              <FaTimes />
+            </button>
+          </div>
+        )}
 
         {/* Profile Icon for desktop */}
         <div className="hidden md:flex w-8 h-8 bg-black rounded-full items-center justify-center text-sm text-white">
