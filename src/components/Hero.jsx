@@ -1,9 +1,15 @@
 "use client";
 import { useState } from "react";
-import { FaRegCreditCard, FaEdit } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
 import Image from "next/image";
+import Popup from "@/components/Popup"
 
 const BillingPage = () => {
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const togglePopup = () => {
+    setPopupOpen(!isPopupOpen);
+  };
   const [paymentMethod, setPaymentMethod] = useState({
     type: "Credit card",
     maskedNumber: "****7019",
@@ -36,15 +42,17 @@ const BillingPage = () => {
                 <p className="text-sm">
                   {paymentMethod.type} {paymentMethod.maskedNumber}
                 </p>
-                <p className="text-xs text-gray-600">
-                  {paymentMethod.expiry}
-                </p>
+                <p className="text-xs text-gray-600">{paymentMethod.expiry}</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <span className="text-green-600 font-medium">Preferred</span>
-              <FaEdit className="text-gray-600 cursor-pointer" />
+              <FaEdit
+                className="text-gray-600 cursor-pointer"
+                onClick={togglePopup}
+              />
             </div>
+            <Popup isOpen={isPopupOpen} onClose={togglePopup} />
           </div>
           <div className="border h-2  bg-gray-100"></div>
           <button className="mt-4 w-64 h-8 bg-gray-200 rounded-full text-black-600 font-medium shadow-md hover:shadow-lg ">
@@ -80,7 +88,7 @@ const BillingPage = () => {
           <h3 className="text-lg font-medium">Service Fees</h3>
           <div className="border h-2 bg-gray-100"></div>
           <div className="flex flex-col items-center justify-center p-6 rounded-lg text-center">
-          <div className="relative w-[42px] h-[54px] flex-none order-0 flex-grow-0">
+            <div className="relative w-[42px] h-[54px] flex-none order-0 flex-grow-0">
               <Image
                 src="/Group 9.png"
                 alt="Dengo"
