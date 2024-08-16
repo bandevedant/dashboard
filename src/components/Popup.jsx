@@ -7,7 +7,7 @@ const Popup = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white w-full max-w-md p-4 rounded-lg flex flex-col h-[85vh] max-h-[80vh]">
+      <div className="bg-white w-full max-w-md p-4 rounded-lg flex flex-col md:-[85vh] max-h-[80vh]">
         <div className="flex justify-between items-center pb-3 border-b">
           <h2 className="text-lg font-bold">Edit Card</h2>
           <button onClick={onClose} className="text-gray-600 text-lg">
@@ -55,12 +55,12 @@ const Popup = ({ isOpen, onClose }) => {
           <div className="flex flex-row gap-2 items-center space-y-1 mt-auto">
             <button
               type="submit"
-                  className="w-full py-2 h-[7vh] bg-blue-500 rounded-md text-gray-100 text-sm"
+                  className="w-full py-2  bg-blue-500 rounded-md text-gray-100 text-sm"
             >
               Save
             </button>
             <button onClick={onClose} 
-            className="w-full py-2 h-[7vh] bg-gray-200 rounded-md text-gray-600 text-sm"
+            className="w-full py-2  bg-gray-200 rounded-md text-gray-600 text-sm"
             >
               Cancel
             </button>
