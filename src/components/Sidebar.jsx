@@ -33,7 +33,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     <div
       className={`fixed inset-0 z-50 transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
-      } md:relative top-[9vh] md:translate-x-0 w-full md:w-64 h-full bg-gray-50  transition-transform duration-300 ease-in-out`}
+      } md:relative top-[9vh] md:top-1 md:translate-x-0 w-full md:w-64 h-full bg-white transition-transform duration-300 ease-in-out`}
     >
       <nav className="flex flex-col p-4 space-y-2">
         {menuItems.map((item) => (
