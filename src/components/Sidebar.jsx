@@ -38,7 +38,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       <nav className="flex flex-col p-4 space-y-2">
         {menuItems.map((item) => (
           <Link key={item.name} href={item.link}>
-            <div className="flex items-center space-x-2 p-2 rounded-lg text-md font-medium transition-colors text-gray-600 hover:bg-gray-100 hover:text-gray-800 cursor-pointer">
+            <div className="flex items-center space-x-2 p-2 border-left-2  border-gray-700 text-md font-medium transition-colors text-gray-600 hover:bg-gray-100 hover:border-l-2 hover:text-gray-800 cursor-pointer">
               {item.icon}
               <span>{item.name}</span>
             </div>
