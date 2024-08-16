@@ -34,7 +34,7 @@ const BillingPage = () => {
               </div>
               <div>
                 <p className="text-sm">
-                  {paymentMethod.type} ****{paymentMethod.maskedNumber}
+                  {paymentMethod.type} {paymentMethod.maskedNumber}
                 </p>
                 <p className="text-xs text-gray-600">
                   {paymentMethod.expiry}

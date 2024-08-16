@@ -27,13 +27,13 @@ const Header = ({ toggleSidebar }) => {
       {/* Right Section: Active Status, Help Icon, Profile */}
       <div className="flex items-center space-x-4">
         {/* Active Status */}
-        <div className="flex flex-row items-center p-2 gap-2 w-20 h-8 bg-gray-200 rounded-full">
+        <div className="hidden md:flex flex-row items-center p-2 gap-2 w-20 h-8 bg-gray-200 rounded-full">
           <FaCircle className="text-green-500" size={8} />
           <span className="text-sm font-medium text-black">Active</span>
         </div>
 
         {/* Help Icon */}
-        <div className="flex flex-row items-center p-2 gap-1 w-16 h-8 bg-gray-200 rounded-full">
+        <div className="hidden md:flex flex-row items-center p-2 gap-1 w-16 h-8 bg-gray-200 rounded-full">
           <IoIosHelpCircle className="text-black-600" size={24} />
           <span className="text-sm font-medium text-black">Help</span>
         </div>
