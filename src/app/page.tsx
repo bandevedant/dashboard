@@ -14,15 +14,12 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header toggleSidebar={toggleSidebar} />
-
       <div className="flex flex-1">
         <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-
         <div className="flex-1 bg-gray-100">
           <Hero />
         </div>
       </div>
-
       {sidebarOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"

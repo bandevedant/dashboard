@@ -15,18 +15,15 @@ const BillingPage = () => {
       <div className="w-full bg-white shadow-lg rounded-lg p-8">
         <h2 className="text-2xl font-semibold mb-4">Billing</h2>
 
-        {/* Billing Type */}
         <div className="mb-6">
           <h3 className="text-lg font-medium">Billing Type</h3>
           <p className="text-gray-700">Pay per Trip</p>
         </div>
 
-        {/* Payment Method */}
         <div className="mb-6">
           <h3 className="text-lg font-medium">Payment Method(s)</h3>
           <div className="flex items-center justify-between p-4 rounded-lg">
             <div className="flex items-center">
-              {/* <FaRegCreditCard className="text-blue-500 mr-3" size={24} /> */}
               <div className="relative w-[26.32px] h-[19.09px] flex-none order-0 mr-3 flex-grow-0">
                 <Image
                   src="/Frame 25.png" // Update with the actual path to your image
@@ -55,7 +52,6 @@ const BillingPage = () => {
           </button>
         </div>
 
-        {/* Statements and Invoices */}
         <div className="mb-6 my-12">
           <h3 className="text-lg font-medium">Statements and Invoices</h3>
           <h2 className="my-4">Monthly statements received by users</h2>
@@ -80,7 +76,6 @@ const BillingPage = () => {
           </div>
         </div>
         <div className="border h-2 bg-gray-100 my-14"></div>
-        {/* Service Fees */}
         <div>
           <h3 className="text-lg font-medium">Service Fees</h3>
           <div className="border h-2 bg-gray-100"></div>
